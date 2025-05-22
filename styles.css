@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+form {
+  width: 700px;
+}
+
+fieldset {
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+input:required {
+  border: 2px solid rgba(255, 0, 0, 0.574);
+}
+
+input:optional {
+  border: 2px solid lightblue;
+}
+
+input:read-only {
+  border: 2px solid rgb(48, 104, 69);
+}
+
+input[type="radio"] {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  color: rgb(34, 0, 255);
+}
+
+input[type="submit"] {
+  border: 3px solid red;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  border: 3px solid red;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+select {
+  background-color: orange;
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: rgb(5, 102, 186);
+}
+
+input[type="text"] + span {
+  display: none;
+}
+
+input[type="text"]:hover + span {
+  display: inline;
+}
+
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 15px;
+  width: 20px;
+}
+
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 15px;
+  width: 20px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <center><h1>Job Application Form</h1></center>
@@ -21,6 +22,7 @@
                 required
                 id="FirstName"
               />
+              <span>Enter your firstname</span>
               <br />
             </td>
           </tr>
@@ -34,6 +36,7 @@
                 required
                 id="LastName"
               />
+              <span>Enter your lastname</span>
               <br />
             </td>
           </tr>
@@ -70,7 +73,18 @@
           <tr>
             <td><label for="Email">Email*</label></td>
             <td>
-              <input type="text" name="email" required id="Email" /> <br />
+              <input type="email" name="email" required id="Email" />
+              <img
+                id="valid"
+                src="https://images.icon-icons.com/1506/PNG/512/emblemok_103757.png"
+                alt=""
+              />
+              <img
+                id="invalid"
+                src="https://rlv.zcache.com/red_x_no_incorrect_symbol_cutout-ref8b3b60f10e4ba2b6485ae60916cde9_x7saw_8byvr_644.webp"
+                alt=""
+              />
+              <br />
             </td>
           </tr>
           <tr>
@@ -88,7 +102,10 @@
           </tr>
           <tr>
             <td><label for="address">Address</label></td>
-            <td><input type="text" name="address" /><br /></td>
+            <td>
+              <input type="text" name="address" /><span>Enter your address</span
+              ><br />
+            </td>
           </tr>
           <tr>
             <td><label for="Country">Country</label></td>
@@ -121,11 +138,20 @@
           </tr>
           <tr>
             <td><label for="specialization">Specialization</label></td>
-            <td><input type="text" name="specialization" /> <br /></td>
+            <td>
+              <input type="text" name="specialization" /><span
+                >Enter your specialization</span
+              >
+              <br />
+            </td>
           </tr>
           <tr>
             <td><label for="year of graduation">Year of Graduation</label></td>
-            <td><input type="text" name="year of graduation" /><br /></td>
+            <td>
+              <input type="text" name="year of graduation" /><span
+                >Enter year</span
+              ><br />
+            </td>
           </tr>
         </table>
       </fieldset>
@@ -134,11 +160,17 @@
         <table>
           <tr>
             <td><label for="Preferred Role">Preferred Role</label></td>
-            <td><input type="text" name="Preferred Role" /><br /></td>
+            <td>
+              <input type="text" name="Preferred Role" /><span>Enter role</span
+              ><br />
+            </td>
           </tr>
           <tr>
             <td><label for="expected-salary">Expected Salary</label></td>
-            <td><input type="text" name="Salary" /> <br /></td>
+            <td>
+              <input type="text" name="Salary" /><span>Enter Salary</span>
+              <br />
+            </td>
           </tr>
           <tr>
             <td><label for="Preferred Location">Preferred Location</label></td>
